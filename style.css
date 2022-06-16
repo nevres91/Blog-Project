@@ -14,6 +14,14 @@ ul {
   list-style: none;
 }
 
+img {
+  caret-color: transparent;
+}
+
+.input-field i {
+  caret-color: transparent;
+}
+
 .background {
   height: 100vh;
   display: flex;
@@ -70,6 +78,7 @@ body .title-image {
 .container .signup {
   opacity: 0;
   transition: opacity 0.09s ease;
+  /* margin-top: 30px; */
 }
 
 .container.active .signup {
@@ -86,19 +95,6 @@ body .title-image {
   font-size: 27px;
   font-weight: 600;
 }
-
-
-
-/* .form .title::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 25px;
-  background-color: #4070f4;
-  border-radius: 25px;
-} */
 
 .form .input-field {
   position: relative;
@@ -128,10 +124,15 @@ body .title-image {
 
 .container .forms .title {
   color: #c78181;
+  caret-color: transparent;
 }
 
 .input-field input:is(:focus, :valid) {
   border-bottom-color: #dd9327;
+}
+
+.input-field input:is(:focus, :valid)~i {
+  color: #dd9327;
 }
 
 .input-field i {
@@ -143,9 +144,48 @@ body .title-image {
   transition: all 0.2s ease;
 }
 
-.input-field input:is(:focus, :valid)~i {
-  color: #dd9327;
+/* --------Invalid input-------- */
+.invalid input {
+  border-bottom-color: #ff5858;
+  color: #ff5858;
 }
+
+.invalid i {
+  color: #ff5858;
+}
+
+.invalid input:is(:focus, :valid) {
+  border-bottom-color: #e35050;
+}
+
+.invalid input:is(:focus, :valid)~i {
+  color: #e35050;
+}
+
+.form p {
+  color: rgb(215, 20, 20);
+  margin-top: 15px;
+}
+
+.alert {
+  display: none;
+  font-weight: 580;
+  font-size: 19px;
+  /* border: #a0e089 solid 1px; */
+  /* width: 100%; */
+  /* margin-top: 10px; */
+  /* padding: 5px; */
+  /* border-radius: 5px; */
+  /* background: #c3ffb6; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(48, 175, 2);
+  /* line-height: 25px; */
+}
+
+
+
 
 .input-field i.icon {
   left: 0%;
