@@ -19,42 +19,43 @@
 <body>
 
   <body id="home-2">
-    <!-- Navbar -->
+    <!------------------------------- Navbar ------------------------->
     <div id="nav-2">
       <div class="home_container">
-        <h2 class="logo">
-          <span class="span"> <i class="fa-solid fa-paw"></i> Pet</span>showoff
+        <div class="cloud_message"><i class="fa-solid fa-face-sad-cry"></i> To be done...</div>
+        <h2 class="logo to_do">
+          <span class="span to_do"> <i class="fa-solid fa-paw"></i> Pet</span>showoff
         </h2>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li class="to_do"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#cases">Account</a></li>
           <li><a href="#blog">Contact</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a id="sign_out" href="#contact">Sign out</a></li>
         </ul>
       </div>
     </div>
-    <!-- Showcase -->
+    <!------------------------------- Showcase ------------------------------>
     <div class="content_container">
       <div class="left_cont">
         <div class="sidebar_left">
           <div class="profile_card">
             <div class="small_container2">
-              <div class="cover_pic">
-                <a href="#"><i class="fa-solid fa-sm fa-user-pen"></i></a>
+              <div class="cover_pic to_do">
+                <a class="to_do" href="#"><i class="fa-solid fa-sm fa-user-pen"></i></a>
               </div>
             </div>
             <div class="small_container">
-              <div class="profile_pic">
+              <div class="profile_pic to_do">
                 <a href="#"><i class="fa-solid fa-sm fa-user-pen"></i></a>
               </div>
               <h4>Nevres Muratović</h4>
             </div>
             <div class="left_links">
-              <a href=""><i class="fa-solid fa-xl fa-cat"></i>My Pets</a>
-              <a href=""><i class="fa-solid fa-xl fa-tv"></i>Pet TV</a>
-              <a href=""><i class="fa-solid fa-xl fa-shop"></i> Shop</a>
-              <a href="">Link</a>
+              <a class="to_do" href="#"><i class="fa-solid fa-xl fa-cat"></i> My Pets</a>
+              <a class="to_do" href="#"><i class="fa-solid fa-xl fa-tv"></i>Pet TV</a>
+              <a class="to_do" href="#"><i class="fa-solid fa-xl fa-shop"></i> Shop</a>
+              <a class="to_do" href="#">Link</a>
             </div>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet obcaecati itaque impedit, accusantium nobis
@@ -67,47 +68,58 @@
           <a href="">Random Link</a>
         </div>
       </div>
+      <!---------------------------------- Middle content ---------------------------->
       <div class="content">
+        <!-- <div class="cloud_message"><i class="fa-solid fa-face-sad-cry"></i> To be done...</div> -->
         <div class="home-container">
           <div class="post_card">
             <div class="post_input">
               <div class="small_user_pic"></div>
-              <input type="text" placeholder="How was your pet's day?">
+              <textarea id="post_input" placeholder="type something here..." required></textarea>
               <div class="post_button">
-                <input type="submit" value="Post">
+                <input id="post_button" type="submit" value="Post">
               </div>
+              <br>
+              <div class="image_name">
+                <span><i class="fa-solid fa-image"></i> <input id="image_name" type="text" disabled value=""></span>
+              </div>
+              <div>
+                <p class="upload_progress"></p>
+              </div>
+              <br>
+              <span>
+                <div class="upload_message"></div>
+              </span>
             </div>
             <div class="post_buttons">
-              <div>
-                <a href="#"><i class="fa-solid fa-photo-film"></i> Upload a Photo</a>
+              <div class="upload_photo">
+                <a id="upload_photo" href="#"><i class="fa-solid fa-photo-film"></i> Upload a Photo</a>
               </div>
-              <div>
-                <a href=""><i class="fa-solid fa-video"></i> Upload Video</a>
+              <div class="to_do">
+                <a class="to_do" id="upload_video"><i class="fa-solid fa-video"></i> Upload Video</a>
               </div>
             </div>
           </div>
-          <div class="content_card">
+          <!-- <div class="content_card">
             <div class="content_name">
-              <div class="small_profile_pic">
-                <!-- <img src="/img/118136635_2070484986408602_5238057932559277684_n.png" alt=""> -->
-              </div>
+              <div class="small_profile_pic"></div>
               <div class="name_text">
-                <h4>Superhero Fanverse</h4>
-                <p>June 23 at 3:08 PM</p>
+                <h4 class="h4">Superhero Fanverse</h4>
+                <p class="posted_at">June 23 at 3:08 PM</p>
               </div>
               <div class="options_icon">
                 <i class="fa-solid fa-xl fa-ellipsis"></i>
               </div>
             </div>
             <div class="content_text">
-              <p>Meet Dodo</p>
+              <p class="text_box">Meet Dodo</p>
               <p class="hashtag">#dodik #president</p>
             </div>
             <div class="content_pic">
-              <img src="/img/DSC_1006.JPG" alt="">
+              <img class="content_image" src="/img/DSC_1006.JPG" alt="">
             </div>
             <div class="content_link">
-              <span>Portal Name</span>
+              <span class="portal_name">Portal Name</span>
               <span class="link_desc">Link Description Comes Here</span>
               <p>A little bit more of description comes here...</p>
             </div>
@@ -138,9 +150,7 @@
           </div>
           <div class="content_card">
             <div class="content_name">
-              <div class="small_profile_pic">
-                <!-- <img src="/img/118136635_2070484986408602_5238057932559277684_n.png" alt=""> -->
-              </div>
+              <div class="small_profile_pic"></div>
               <div class="name_text">
                 <h4>Superhero Fanverse</h4>
                 <p>June 23 at 3:08 PM</p>
@@ -185,177 +195,10 @@
                 </div>
               </div>
             </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae omnis culpa quod eligendi assumenda
-            unde
-            sequi quae? Facilis saepe sapiente delectus, recusandae dolorum nulla, ab aut sed quas quisquam ipsa porro
-            cupiditate? Maiores autem repudiandae labore placeat sint ipsa maxime itaque laborum ipsam illum obcaecati,
-            nesciunt, at blanditiis quo neque.
-          </p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+          </div> -->
         </div>
       </div>
+      <!--------------------------------------------------- RIGHT CONTENT ----------------------------------------------------------->
       <div class="right_cont">
         <div class="sidebar_right">
           <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="Neu-Ulm"
@@ -372,5 +215,5 @@
       </div>
     </div>
   </body>
-  <script src="home.js"></script>
+  <script type="module" src="home.js"></script>
   </header>

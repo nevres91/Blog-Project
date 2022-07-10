@@ -328,6 +328,24 @@ body .title-image {
 }
 
 /* <------SHOWCASE------> */
+.cloud_message {
+  /* display: flex; */
+  display: none;
+  position: absolute;
+  left: 1300px;
+  top: 534px;
+  background: rgb(230, 114, 114);
+  padding: 8px;
+  border-radius: 10px;
+  width: 150px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  z-index: 900000;
+  cursor: pointer;
+
+}
+
 .content {
   /* background: url(/Sample\ pictures/background2.jpg) center; */
   border-radius: 10px;
@@ -579,8 +597,23 @@ body .title-image {
   padding: 12px 16px 0;
 }
 
+.content_name h4 {
+  margin: 5px 0;
+}
+
 .content_text {
   padding: 12px 16px 0;
+  /* max-height: 150px;
+  overflow: auto; */
+}
+
+.content_text p {
+  max-height: 150px;
+  overflow: auto;
+}
+
+.content_text p::-webkit-scrollbar {
+  width: 0px;
 }
 
 .small_profile_pic {
@@ -701,7 +734,89 @@ body .title-image {
   grid-template-columns: 40px 1fr 80px;
   grid-column-gap: 5px;
   padding: 12px 16px 0;
+
 }
+
+/* ------------------------TEXT AREA-------------------- */
+.post_input textarea {
+  padding: 13px 10px 2px;
+  font-size: 1.2rem;
+  border-radius: 17px;
+  background: #efe7d9;
+  outline: none;
+  border: none;
+  resize: none;
+  max-height: 330px;
+}
+
+.image_name {
+  display: none;
+  flex-direction: row;
+  overflow: hidden;
+  margin-top: 10px;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  border-radius: 17px;
+  background: #efe7d9;
+  outline: none;
+  border: none;
+  resize: none;
+  max-height: 330px;
+}
+
+#image_name {
+  background: none;
+  border: none;
+  color: #333;
+  outline: none;
+  caret-color: transparent;
+}
+
+.upload_message {
+  color: green;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.image_name span {
+  display: flex;
+}
+
+.image_name span i {
+  padding-top: 4px;
+}
+
+#image_name {
+  width: 100%;
+}
+
+.upload_progress {
+  margin: 15px 10px 0;
+  padding: 2px 4px;
+  overflow: hidden;
+  /* font-size: 14px; */
+  font-weight: 600;
+}
+
+textarea:is(:focus, :valid) {
+  background: #674c3663;
+  outline: 1px solid #625244;
+  color: #fff;
+}
+
+.post_input textarea:focus::placeholder {
+  color: white;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+
 
 
 
@@ -731,6 +846,7 @@ body .title-image {
   border-radius: 17px;
   background: rgba(120, 103, 90, 0.5);
   cursor: pointer;
+  max-height: 49px;
 }
 
 .post_button:hover {
@@ -741,7 +857,7 @@ body .title-image {
   background: none;
   color: rgb(242, 224, 204);
   cursor: pointer;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 
@@ -758,9 +874,7 @@ body .title-image {
   color: rgb(242, 224, 204);
 }
 
-.post_input input:focus::placeholder {
-  color: white;
-}
+
 
 
 
@@ -794,4 +908,20 @@ body .title-image {
 
 .weatherwidget-io {
   margin: 10px 0;
+}
+
+
+
+/* Responsivity */
+
+@media(max-width:768px) {
+  .background {
+    background: url(/img/mobile.pets.jpg) no-repeat center center/cover;
+  }
+
+  body .title-image {
+
+    width: 85%;
+  }
+
 }

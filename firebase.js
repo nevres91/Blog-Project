@@ -214,8 +214,6 @@ login.addEventListener("click", function login() {
       inputs.forEach(function (input) {
         input.value = '';
       })
-
-
     })
 
 
