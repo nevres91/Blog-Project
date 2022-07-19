@@ -270,6 +270,9 @@ body .title-image {
 }
 
 /* background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
+.home-container {
+  position: relative;
+}
 
 /* <----Navbar----> */
 #nav-2 .home_container {
@@ -603,8 +606,7 @@ body .title-image {
 
 .content_text {
   padding: 12px 16px 0;
-  /* max-height: 150px;
-  overflow: auto; */
+  position: relative;
 }
 
 .content_text p {
@@ -616,6 +618,48 @@ body .title-image {
   width: 0px;
 }
 
+.content_text .dd_menu {
+  display: block;
+  position: absolute;
+  top: -28px;
+  right: 16px;
+  background: rgb(120, 103, 90)
+}
+
+.dd_menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.dd_menu {
+  border-radius: 10px 0px 10px 10px;
+  clip-path: circle(0%);
+  transform: translate(26px, -50px);
+  transition: all 0.2s ease-in-out;
+}
+
+.dd_menu li:hover {
+  border-radius: 10px;
+  background: rgb(103, 89, 77)
+}
+
+
+/* .dd_menu:hover {
+  clip-path: circle(100%);
+  transform: translate(0px, 0px);
+} */
+
+/* .dd_menu .edit_p {
+  background: red;
+  display: none;
+}
+
+.dd_menu .delete_p {
+  background: red;
+  display: none;
+} */
+
 .small_profile_pic {
   border-radius: 50%;
   height: 40px;
@@ -624,6 +668,8 @@ body .title-image {
 }
 
 .options_icon {
+  overflow: visible;
+  position: relative;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -632,15 +678,19 @@ body .title-image {
 }
 
 .options_icon:hover {
-  background: rgba(120, 103, 90, 0.5);
+  background: rgb(120, 103, 90);
   cursor: pointer;
 
 }
+
+
 
 .options_icon i {
   padding-top: 20px;
 
 }
+
+
 
 .content_pic {
   object-fit: cover;
@@ -709,6 +759,29 @@ body .title-image {
   padding: 12px 16px 0;
 }
 
+/* ------------------------EDIT CARD------------------- */
+
+.edit_button {
+  display: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 17px;
+  background: rgba(120, 103, 90, 0.5);
+  cursor: pointer;
+  max-height: 49px;
+}
+
+.edit_button:hover {
+  background: rgba(120, 103, 90, 0.9);
+}
+
+#edit_button {
+  background: none;
+  color: rgb(242, 224, 204);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
 /* -------------User-Post card------------------ */
 
 .hashtag {
@@ -722,6 +795,7 @@ body .title-image {
   display: grid;
   grid-template-rows: auto auto;
   grid-row-gap: 5px;
+  /* background: rgba(173, 51, 13, 0.4); */
   background: rgba(131, 110, 86, 0.4);
   max-width: 1100px;
   border-radius: 10px;
@@ -841,6 +915,7 @@ textarea::-webkit-scrollbar {
 }
 
 .post_button {
+  display: block;
   width: 100%;
   text-align: center;
   border-radius: 17px;
